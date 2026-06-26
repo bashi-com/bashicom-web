@@ -1,0 +1,79 @@
+/* Bashi.com — 一橋コンピュータ研究会 ランディングページ
+   Claude Design (BashiDirB.dc.html) を素のHTML/CSS/JSへ実装したスタイル */
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+body { margin: 0; }
+::selection { background: #62C4CB; color: #08222a; }
+
+.bb-scroll::-webkit-scrollbar { height: 7px; }
+.bb-scroll::-webkit-scrollbar-thumb { background: #cfd9dd; border-radius: 99px; }
+.bb-scroll::-webkit-scrollbar-track { background: transparent; }
+
+@keyframes floatB { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+@keyframes nudgeB { 0%, 100% { transform: translateY(0); opacity: .5; } 50% { transform: translateY(6px); opacity: 1; } }
+
+.bb-card { transition: transform .35s cubic-bezier(.2,.7,.3,1), box-shadow .35s, border-color .35s; }
+.bb-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(16,40,46,.12); border-color: #9FDADF !important; }
+
+.bb-pill { transition: transform .35s cubic-bezier(.2,.7,.3,1), box-shadow .35s; }
+.bb-pill:hover { transform: translateY(-5px); }
+.bb-pill:hover .bb-pillbar { transform: scaleX(1); }
+.bb-pillbar { position: absolute; top: -2px; left: 0; width: 100%; height: 2px; background: #62C4CB; transform: scaleX(0); transform-origin: left; transition: transform .45s cubic-bezier(.2,.7,.3,1); }
+
+.bb-btn-primary { transition: transform .25s, box-shadow .25s; }
+.bb-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(98,196,203,.42); }
+.bb-btn-ghost { transition: background .25s, border-color .25s, transform .25s; }
+.bb-btn-ghost:hover { transform: translateY(-2px); border-color: #62C4CB; background: #F4FAFB; }
+
+.bb-arrow { display: inline-block; transition: transform .3s; }
+.bb-link:hover .bb-arrow { transform: translateX(5px); }
+
+.bb-soc { transition: transform .25s, border-color .25s, color .25s; }
+.bb-soc:hover { transform: translateY(-3px); border-color: #62C4CB; color: #0E6B74; }
+
+.bb-navlink { position: relative; transition: color .25s; }
+.bb-navlink::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: #62C4CB; transform: scaleX(0); transform-origin: left; transition: transform .3s; }
+.bb-navlink.bb-active { color: #0E6B74; }
+.bb-navlink.bb-active::after { transform: scaleX(1); }
+
+.bb-partnercard { transition: transform .35s cubic-bezier(.2,.7,.3,1), background .35s, border-color .35s; }
+.bb-partnercard:hover { transform: translateY(-6px); background: rgba(98,196,203,.1); border-color: rgba(127,217,222,.5); }
+
+/* メンバーカード（Members ページ） */
+.bb-mcard { transition: transform .35s cubic-bezier(.2,.7,.3,1), box-shadow .35s, border-color .35s; }
+.bb-mcard:hover { transform: translateY(-5px); box-shadow: 0 16px 38px rgba(16,40,46,.1); border-color: #9FDADF !important; }
+.bb-mcard:hover .bb-av { transform: scale(1.06) rotate(-2deg); }
+.bb-av { transition: transform .4s cubic-bezier(.2,.7,.3,1); }
+.bb-chip { transition: background .2s, color .2s, border-color .2s; cursor: pointer; }
+
+/* 戻るリンク */
+.bb-back:hover .bb-arrow { transform: translateX(-4px); }
+
+/* 画像プレースホルダー（元 image-slot 要素の代替） */
+.image-slot {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  padding: 16px;
+  background: repeating-linear-gradient(135deg, #EEF3F4, #EEF3F4 10px, #E7EFF0 10px, #E7EFF0 20px);
+  border: 1px dashed #C4D2D5;
+  color: #8A969C; font-size: 12.5px; line-height: 1.6;
+}
+
+/* 白ロゴ（暗い背景用）— 黒ロゴをCSSで白へ反転 */
+.logo-invert { filter: brightness(0) invert(1); }
+
+/* ナビ：デスクトップ / モバイル切替 */
+.bb-desktop-nav { display: flex; align-items: center; gap: 30px; }
+.bb-menu-btn { display: none; }
+.bb-mobile-menu { display: none; }
+
+@media (max-width: 879px) {
+  .bb-desktop-nav { display: none; }
+  .bb-menu-btn { display: inline-flex; align-items: center; justify-content: center; }
+  .bb-mobile-menu.open { display: flex; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; }
+  html { scroll-behavior: auto; }
+}
