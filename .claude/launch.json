@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "bashicom",
-      "runtimeExecutable": "python3",
+      "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "4178"],
       "port": 4178
     }

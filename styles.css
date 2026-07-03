@@ -50,15 +50,6 @@ body { margin: 0; }
 /* 戻るリンク */
 .bb-back:hover .bb-arrow { transform: translateX(-4px); }
 
-/* 画像プレースホルダー（元 image-slot 要素の代替） */
-.image-slot {
-  display: flex; align-items: center; justify-content: center; text-align: center;
-  padding: 16px;
-  background: repeating-linear-gradient(135deg, #EEF3F4, #EEF3F4 10px, #E7EFF0 10px, #E7EFF0 20px);
-  border: 1px dashed #C4D2D5;
-  color: #8A969C; font-size: 12.5px; line-height: 1.6;
-}
-
 /* 白ロゴ（暗い背景用）— 黒ロゴをCSSで白へ反転 */
 .logo-invert { filter: brightness(0) invert(1); }
 

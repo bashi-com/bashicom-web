@@ -66,11 +66,6 @@
     </div>
   </section>
 
-  <!-- IMAGE BAND -->
-  <section style="max-width:1180px;margin:0 auto;padding:0 24px clamp(40px,6vw,80px)">
-    <div class="image-slot" data-rv style="opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s;width:100%;aspect-ratio:21/8;min-height:220px;border-radius:18px;overflow:hidden">活動・メンバーの写真をドロップ（推奨 21:8の横長）</div>
-  </section>
-
   <!-- ABOUT -->
   <section id="about" style="background:#F7F9FA;border-top:1px solid #EDF0F2;border-bottom:1px solid #EDF0F2">
     <div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,104px) 24px">
@@ -89,11 +84,21 @@
           <p data-rv data-rv-delay="180" style="opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s;margin:0;font-size:16px;line-height:2;color:#46515A">在籍メンバーは50名以上。学年・文理を問わず、初心者から経験者まで、それぞれのペースで学び合えるコミュニティを目指しています。</p>
         </div>
       </div>
-      <div data-rv style="opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s;display:grid;grid-template-columns:1.6fr 1fr;gap:14px;margin-top:48px">
-        <div class="image-slot" style="width:100%;aspect-ratio:4/3;min-height:220px;border-radius:16px;overflow:hidden">活動風景の写真</div>
-        <div style="display:grid;grid-template-rows:1fr 1fr;gap:14px">
-          <div class="image-slot" style="width:100%;height:100%;min-height:103px;border-radius:16px;overflow:hidden">集合写真など</div>
-          <div class="image-slot" style="width:100%;height:100%;min-height:103px;border-radius:16px;overflow:hidden">もくもく会など</div>
+      <div data-rv style="opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:48px">
+        <div class="bb-card" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:26px 24px">
+          <div style="width:44px;height:44px;border-radius:12px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74;margin-bottom:16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17"/><path d="M8 13h3"/></svg></div>
+          <h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">週次のもくもく会</h3>
+          <p style="margin:0;font-size:13.5px;line-height:1.8;color:#56616A">それぞれの開発を持ち寄り、集まって手を動かす時間を定期的に設けています。</p>
+        </div>
+        <div class="bb-card" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:26px 24px">
+          <div style="width:44px;height:44px;border-radius:12px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74;margin-bottom:16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5h16v11H8.5L4 19.5z"/></svg></div>
+          <h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">Slack で気軽に相談</h3>
+          <p style="margin:0;font-size:13.5px;line-height:1.8;color:#56616A">わからないことも、思いついたアイデアも、いつでも投げかけられる雰囲気があります。</p>
+        </div>
+        <div class="bb-card" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:26px 24px">
+          <div style="width:44px;height:44px;border-radius:12px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74;margin-bottom:16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="8" r="2.6"/><circle cx="16.5" cy="8" r="2.6"/><path d="M2.8 19a5 5 0 019.4 0"/><path d="M11.8 19a5 5 0 019.4 0"/></svg></div>
+          <h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">学年・学部混合のチーム</h3>
+          <p style="margin:0;font-size:13.5px;line-height:1.8;color:#56616A">先輩後輩、文系理系の垣根なく、興味を軸にチームを組んでプロジェクトを進めます。</p>
         </div>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:#E2E7EA;border:1px solid #E2E7EA;border-radius:14px;overflow:hidden;margin-top:48px">
@@ -132,7 +137,6 @@
       <!-- pillar 01 -->
       <a href="Activities.html" data-rv data-rv-delay="0" class="bb-pill" style="opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s;text-decoration:none;color:inherit;display:block;background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:32px 28px 34px;position:relative;overflow:hidden">
         <div class="bb-pillbar"></div>
-        <div class="image-slot" style="width:100%;aspect-ratio:16/9;margin-bottom:22px;border-radius:12px;overflow:hidden">コード・開発のようす</div>
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px">
           <div style="width:50px;height:50px;border-radius:13px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-5 6 5 6"/><path d="M16 6l5 6-5 6"/><path d="M14 4l-4 16"/></svg></div>
           <span style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;color:#B4BEC4">01</span>
@@ -149,7 +153,6 @@
       <!-- pillar 02 -->
       <a href="Activities.html" data-rv data-rv-delay="110" class="bb-pill" style="opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s;text-decoration:none;color:inherit;display:block;background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:32px 28px 34px;position:relative;overflow:hidden">
         <div class="bb-pillbar"></div>
-        <div class="image-slot" style="width:100%;aspect-ratio:16/9;margin-bottom:22px;border-radius:12px;overflow:hidden">ホワイトボード・議論</div>
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px">
           <div style="width:50px;height:50px;border-radius:13px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3"/><path d="M12 18.5v3"/><path d="M2.5 12h3"/><path d="M18.5 12h3"/><path d="M5.6 5.6l2 2"/><path d="M16.4 16.4l2 2"/></svg></div>
           <span style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;color:#B4BEC4">02</span>
@@ -165,7 +168,6 @@
       <!-- pillar 03 -->
       <a href="Activities.html" data-rv data-rv-delay="220" class="bb-pill" style="opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s;text-decoration:none;color:inherit;display:block;background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:32px 28px 34px;position:relative;overflow:hidden">
         <div class="bb-pillbar"></div>
-        <div class="image-slot" style="width:100%;aspect-ratio:16/9;margin-bottom:22px;border-radius:12px;overflow:hidden">デザイン・制作物</div>
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px">
           <div style="width:50px;height:50px;border-radius:13px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.3 5.8L20.5 9.4l-4.4 4.3 1.1 6.1L12 16.9 6.8 19.8l1.1-6.1L3.5 9.4l6.2-.6z"/></svg></div>
           <span style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;color:#B4BEC4">03</span>
