@@ -1,0 +1,89 @@
+{
+  "_comment": "メンバー一覧データ。ここを編集するだけで Members.html の表示が更新されます。role には '代表' または '副代表' を指定すると、ページ上部に大きく表示されます（それ以外のメンバーは role を省略、または空文字にしてください）。",
+  "members": [
+    {
+      "name": "R. Watanabe",
+      "role": "代表",
+      "grade": "B4",
+      "faculty": "経済学部",
+      "bio": "データ分析でチームの意思決定を支える。団体全体の方向性を考えるのが好き。"
+    },
+    {
+      "name": "H. Yamamoto",
+      "role": "副代表",
+      "grade": "B3",
+      "faculty": "商学部",
+      "bio": "ゲーム制作出身。対外広報とイベント運営を担当しています。"
+    },
+    {
+      "name": "A. Sato",
+      "role": "",
+      "grade": "B2",
+      "faculty": "商学部",
+      "bio": "Web フロントが好き。最近は React と向き合う日々。"
+    },
+    {
+      "name": "K. Tanaka",
+      "role": "",
+      "grade": "B3",
+      "faculty": "経済学部",
+      "bio": "学内の面倒な作業を自動化するのが趣味。"
+    },
+    {
+      "name": "M. Suzuki",
+      "role": "",
+      "grade": "B1",
+      "faculty": "社会学部",
+      "bio": "映像と UI デザイン。手を動かしながら学習中。"
+    },
+    {
+      "name": "Y. Ito",
+      "role": "",
+      "grade": "B2",
+      "faculty": "法学部",
+      "bio": "バックエンド志望。API 設計に興味あり。"
+    },
+    {
+      "name": "S. Nakamura",
+      "role": "",
+      "grade": "B1",
+      "faculty": "社会学部",
+      "bio": "大学からプログラミング開始。日々キャッチアップ中。"
+    },
+    {
+      "name": "T. Kobayashi",
+      "role": "",
+      "grade": "B2",
+      "faculty": "法学部",
+      "bio": "身近な不便をツールで解決したい。"
+    },
+    {
+      "name": "N. Kato",
+      "role": "",
+      "grade": "B3",
+      "faculty": "経済学部",
+      "bio": "モーションとブランディングに関心。"
+    },
+    {
+      "name": "D. Yoshida",
+      "role": "",
+      "grade": "B4",
+      "faculty": "商学部",
+      "bio": "AI / ML を使ったプロダクト開発に挑戦中。"
+    },
+    {
+      "name": "E. Yamada",
+      "role": "",
+      "grade": "B1",
+      "faculty": "社会学部",
+      "bio": "スプレッドシート職人から自動化エンジニアへ。"
+    },
+    {
+      "name": "F. Sasaki",
+      "role": "",
+      "grade": "B2",
+      "faculty": "法学部",
+      "bio": "UI/UX とイラスト。チームのデザイン担当。"
+    }
+  ]
+}

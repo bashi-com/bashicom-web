@@ -45,7 +45,6 @@ body { margin: 0; }
 .bb-mcard:hover { transform: translateY(-5px); box-shadow: 0 16px 38px rgba(16,40,46,.1); border-color: #9FDADF !important; }
 .bb-mcard:hover .bb-av { transform: scale(1.06) rotate(-2deg); }
 .bb-av { transition: transform .4s cubic-bezier(.2,.7,.3,1); }
-.bb-chip { transition: background .2s, color .2s, border-color .2s; cursor: pointer; }
 
 /* 戻るリンク */
 .bb-back:hover .bb-arrow { transform: translateX(-4px); }

@@ -31,119 +31,23 @@
     <p data-rv data-rv-delay="160" style="opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;margin:0;max-width:620px;font-size:16px;line-height:2;color:#56616A">学年も、文理も、得意なこともさまざま。50名以上のメンバーが、それぞれの興味を持ち寄って活動しています。<span style="color:#8A949B">（掲載は一例です。プロフィールは差し替えできます。）</span></p>
   </section>
 
-  <!-- FILTER -->
-  <section style="max-width:1180px;margin:0 auto;padding:0 24px clamp(28px,4vw,40px);position:sticky;top:69px;z-index:30;background:#fff">
-    <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid #EDF0F2">
-      <div id="bb-filters" style="display:flex;flex-wrap:wrap;gap:8px">
-        <button class="bb-chip" data-filter="all" style="font-family:'IBM Plex Sans JP',sans-serif;font-size:13px;font-weight:600;padding:9px 16px;border-radius:99px;border:1px solid #62C4CB;background:#62C4CB;color:#08222a">すべて</button>
-        <button class="bb-chip" data-filter="dev" style="font-family:'IBM Plex Sans JP',sans-serif;font-size:13px;font-weight:600;padding:9px 16px;border-radius:99px;border:1px solid #E2E7EA;background:#fff;color:#46515A">技術・開発</button>
-        <button class="bb-chip" data-filter="solve" style="font-family:'IBM Plex Sans JP',sans-serif;font-size:13px;font-weight:600;padding:9px 16px;border-radius:99px;border:1px solid #E2E7EA;background:#fff;color:#46515A">課題解決</button>
-        <button class="bb-chip" data-filter="create" style="font-family:'IBM Plex Sans JP',sans-serif;font-size:13px;font-weight:600;padding:9px 16px;border-radius:99px;border:1px solid #E2E7EA;background:#fff;color:#46515A">クリエイション</button>
-      </div>
-      <span id="bb-count" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8A949B">12 / 12 名</span>
+  <!-- LEADERSHIP -->
+  <section id="bb-leadership" style="max-width:1180px;margin:0 auto;padding:0 24px clamp(28px,4vw,40px)">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#9AA4AB;text-transform:uppercase;margin-bottom:16px">代表・副代表</div>
+    <div id="bb-lead-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px"></div>
+  </section>
+
+  <!-- COUNT -->
+  <section style="max-width:1180px;margin:0 auto;padding:0 24px clamp(20px,3vw,28px)">
+    <div style="display:flex;justify-content:flex-end;padding:14px 0;border-bottom:1px solid #EDF0F2">
+      <span id="bb-count" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8A949B"></span>
     </div>
   </section>
 
   <!-- GRID -->
   <section style="max-width:1180px;margin:0 auto;padding:0 24px clamp(48px,7vw,88px)">
     <div id="bb-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px">
-      <!-- members are rendered by members data; markup is static below -->
-      <div class="bb-mcard" data-domain="dev" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#E3F4F5;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#0E6B74;flex-shrink:0">A</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">A. Sato</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B2・商学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">技術・開発</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">Web フロントが好き。最近は React と向き合う日々。</p>
-      </div>
-      <div class="bb-mcard" data-domain="solve" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#EAF1E9;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#3E6B3A;flex-shrink:0">K</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">K. Tanaka</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B3・経済学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">課題解決</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">学内の面倒な作業を自動化するのが趣味。</p>
-      </div>
-      <div class="bb-mcard" data-domain="create" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#F3E9F0;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#7A3E63;flex-shrink:0">M</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">M. Suzuki</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B1・社会学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">クリエイション</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">映像と UI デザイン。手を動かしながら学習中。</p>
-      </div>
-      <div class="bb-mcard" data-domain="dev" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#E3F4F5;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#0E6B74;flex-shrink:0">Y</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">Y. Ito</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B2・法学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">技術・開発</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">バックエンド志望。API 設計に興味あり。</p>
-      </div>
-      <div class="bb-mcard" data-domain="solve" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#EAF1E9;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#3E6B3A;flex-shrink:0">R</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">R. Watanabe</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B4・経済学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">課題解決</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">データ分析でチームの意思決定を支える。</p>
-      </div>
-      <div class="bb-mcard" data-domain="create" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#F3E9F0;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#7A3E63;flex-shrink:0">H</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">H. Yamamoto</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B3・商学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">クリエイション</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">ゲーム制作。アイデアを形にするのが好き。</p>
-      </div>
-      <div class="bb-mcard" data-domain="dev" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#E3F4F5;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#0E6B74;flex-shrink:0">S</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">S. Nakamura</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B1・社会学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">技術・開発</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">大学からプログラミング開始。日々キャッチアップ中。</p>
-      </div>
-      <div class="bb-mcard" data-domain="solve" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#EAF1E9;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#3E6B3A;flex-shrink:0">T</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">T. Kobayashi</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B2・法学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">課題解決</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">身近な不便をツールで解決したい。</p>
-      </div>
-      <div class="bb-mcard" data-domain="create" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#F3E9F0;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#7A3E63;flex-shrink:0">N</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">N. Kato</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B3・経済学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">クリエイション</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">モーションとブランディングに関心。</p>
-      </div>
-      <div class="bb-mcard" data-domain="dev" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#E3F4F5;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#0E6B74;flex-shrink:0">D</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">D. Yoshida</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B4・商学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">技術・開発</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">AI / ML を使ったプロダクト開発に挑戦中。</p>
-      </div>
-      <div class="bb-mcard" data-domain="solve" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#EAF1E9;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#3E6B3A;flex-shrink:0">E</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">E. Yamada</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B1・社会学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">課題解決</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">スプレッドシート職人から自動化エンジニアへ。</p>
-      </div>
-      <div class="bb-mcard" data-domain="create" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:24px 22px 22px">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-          <div class="bb-av" style="width:54px;height:54px;border-radius:50%;background:#F3E9F0;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#7A3E63;flex-shrink:0">F</div>
-          <div style="min-width:0"><div style="font-weight:700;font-size:16px;line-height:1.3">F. Sasaki</div><div style="font-size:12.5px;color:#8A949B;margin-top:2px">B2・法学部</div></div>
-        </div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:5px 11px;border-radius:99px;margin-bottom:14px">クリエイション</div>
-        <p style="margin:0;font-size:13px;line-height:1.75;color:#56616A">UI/UX とイラスト。チームのデザイン担当。</p>
-      </div>
+      <!-- members are rendered from members.json by members.js -->
     </div>
   </section>
 
