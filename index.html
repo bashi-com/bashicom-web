@@ -11,241 +11,241 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main id="bb-root" style="background:#FFFFFF;color:#10171C;font-family:'IBM Plex Sans JP',sans-serif;position:relative;overflow-x:hidden;min-height:100vh;-webkit-font-smoothing:antialiased">
+<main id="bb-root" class="bb-page">
 
   <!-- reading progress -->
-  <div id="bb-progress" style="position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#62C4CB,#0E6B74);z-index:60;transition:width .1s linear"></div>
+  <div id="bb-progress" class="progress-bar"></div>
 
   <!-- NAV -->
-  <header style="position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:rgba(255,255,255,.82);border-bottom:1px solid #ECEFF1">
-    <nav style="max-width:1180px;margin:0 auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px">
-      <a href="#top" aria-label="Bashi.com" style="display:flex;align-items:center;text-decoration:none">
-        <img src="uploads/SCARE_LOGO_Opacity_BLACK.png" alt="Bashi.com" style="height:36px;width:auto;display:block">
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="#top" aria-label="Bashi.com" class="logo-link">
+        <img src="uploads/SCARE_LOGO_Opacity_BLACK.png" alt="Bashi.com" class="logo-img">
       </a>
       <div class="bb-desktop-nav">
-        <a href="#about" data-navlink="about" class="bb-navlink" style="color:#3D474E;text-decoration:none;font-size:14px;font-weight:500">About</a>
-        <a href="#activities" data-navlink="activities" class="bb-navlink" style="color:#3D474E;text-decoration:none;font-size:14px;font-weight:500">活動内容</a>
-        <a href="#works" data-navlink="works" class="bb-navlink" style="color:#3D474E;text-decoration:none;font-size:14px;font-weight:500">実績</a>
-        <a href="Members.html" class="bb-navlink" style="color:#3D474E;text-decoration:none;font-size:14px;font-weight:500">メンバー</a>
-        <a href="#join" data-navlink="join" class="bb-navlink" style="color:#3D474E;text-decoration:none;font-size:14px;font-weight:500">入会</a>
-        <a href="#partners" data-navlink="partners" class="bb-navlink" style="color:#3D474E;text-decoration:none;font-size:14px;font-weight:500">企業の方へ</a>
-        <a href="#join" class="bb-btn-primary" style="font-size:13.5px;font-weight:600;color:#08222a;background:#62C4CB;text-decoration:none;padding:10px 20px;border-radius:8px">入会する</a>
+        <a href="#about" data-navlink="about" class="bb-navlink">About</a>
+        <a href="#activities" data-navlink="activities" class="bb-navlink">活動内容</a>
+        <a href="#works" data-navlink="works" class="bb-navlink">実績</a>
+        <a href="Members.html" class="bb-navlink">メンバー</a>
+        <a href="#join" data-navlink="join" class="bb-navlink">入会</a>
+        <a href="#partners" data-navlink="partners" class="bb-navlink">企業の方へ</a>
+        <a href="#join" class="bb-btn-primary btn btn-primary btn-sm">入会する</a>
       </div>
-      <button id="bb-menu-btn" class="bb-menu-btn" aria-label="menu" aria-expanded="false" style="background:#F1F4F5;border:1px solid #E2E7EA;color:#10171C;width:42px;height:42px;border-radius:9px;cursor:pointer;font-size:18px">≡</button>
+      <button id="bb-menu-btn" class="bb-menu-btn" aria-label="menu" aria-expanded="false">≡</button>
     </nav>
-    <div id="bb-mobile-menu" class="bb-mobile-menu" style="padding:6px 24px 18px;flex-direction:column;gap:2px;border-top:1px solid #EEF1F3">
-      <a href="#about" style="color:#10171C;text-decoration:none;font-size:15px;padding:12px 4px;border-bottom:1px solid #F1F4F5">About</a>
-      <a href="#activities" style="color:#10171C;text-decoration:none;font-size:15px;padding:12px 4px;border-bottom:1px solid #F1F4F5">活動内容</a>
-      <a href="#works" style="color:#10171C;text-decoration:none;font-size:15px;padding:12px 4px;border-bottom:1px solid #F1F4F5">制作物・実績</a>
-      <a href="Members.html" style="color:#10171C;text-decoration:none;font-size:15px;padding:12px 4px;border-bottom:1px solid #F1F4F5">メンバー一覧</a>
-      <a href="Activities.html" style="color:#10171C;text-decoration:none;font-size:15px;padding:12px 4px;border-bottom:1px solid #F1F4F5">活動詳細</a>
-      <a href="#join" style="color:#10171C;text-decoration:none;font-size:15px;padding:12px 4px;border-bottom:1px solid #F1F4F5">入会案内</a>
-      <a href="#partners" style="color:#10171C;text-decoration:none;font-size:15px;padding:12px 4px;border-bottom:1px solid #F1F4F5">企業・協業の方へ</a>
-      <a href="#join" style="margin-top:8px;text-align:center;color:#08222a;background:#62C4CB;text-decoration:none;padding:13px;border-radius:8px;font-weight:600">入会する</a>
+    <div id="bb-mobile-menu" class="bb-mobile-menu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#activities" class="mobile-link">活動内容</a>
+      <a href="#works" class="mobile-link">制作物・実績</a>
+      <a href="Members.html" class="mobile-link">メンバー一覧</a>
+      <a href="Activities.html" class="mobile-link">活動詳細</a>
+      <a href="#join" class="mobile-link">入会案内</a>
+      <a href="#partners" class="mobile-link">企業・協業の方へ</a>
+      <a href="#join" class="mobile-cta">入会する</a>
     </div>
   </header>
 
   <!-- HERO -->
-  <section id="top" style="position:relative;max-width:920px;margin:0 auto;padding:clamp(60px,9vw,128px) 24px clamp(40px,5vw,64px);text-align:center">
-    <div style="position:absolute;top:14%;left:6%;width:12px;height:12px;border-radius:50%;background:#62C4CB;opacity:.5;animation:floatB 6s ease-in-out infinite"></div>
-    <div style="position:absolute;top:34%;right:9%;width:22px;height:22px;border-radius:7px;border:2px solid #BFE6E8;animation:floatB 8s ease-in-out infinite .8s"></div>
-    <div data-rv style="opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.16em;color:#11757F;margin-bottom:24px;text-transform:uppercase">一橋大学公認 — 一橋コンピュータ研究会</div>
-    <h1 data-rv data-rv-delay="80" style="opacity:0;transform:translateY(22px);transition:opacity .9s,transform .9s;margin:0 0 22px;display:flex;justify-content:center"><img src="uploads/LECTANGLE_LOGO_Opacity_BLACK.png" alt="Bashi.com" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" style="width:clamp(300px,64vw,680px);height:auto;display:block"><span style="display:none;font-weight:700;font-size:clamp(48px,10vw,108px);letter-spacing:-.04em;line-height:1;color:#10171C">Bashi<span style="color:#0E6B74">.com</span></span></h1>
-    <div data-rv data-rv-delay="150" style="opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s;margin:0 0 26px;font-weight:600;font-size:clamp(20px,2.8vw,30px);letter-spacing:.02em;color:#243036">一橋の<span style="position:relative;white-space:nowrap;color:#0E6B74">ITコミュニティ<span data-uline style="position:absolute;left:0;bottom:-.12em;width:100%;height:.09em;background:#62C4CB;transform:scaleX(0);transform-origin:left;transition:transform 1s cubic-bezier(.7,0,.2,1) .5s;border-radius:99px"></span></span></div>
-    <p data-rv data-rv-delay="220" style="opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s;margin:0 auto 36px;max-width:600px;font-size:clamp(15.5px,1.7vw,18px);line-height:1.9;color:#56616A">技術・プロダクト開発、ITを用いた課題解決、デジタルクリエイション。<br>ものづくりを軸に活動する、一橋大学公認の学生コミュニティです。</p>
-    <div data-rv data-rv-delay="260" style="opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s;display:flex;flex-wrap:wrap;gap:13px;justify-content:center;margin-bottom:46px">
-      <a href="#join" class="bb-btn-primary" style="font-size:15px;font-weight:600;color:#08222a;background:#62C4CB;text-decoration:none;padding:15px 30px;border-radius:9px;box-shadow:0 10px 26px rgba(98,196,203,.32)">入会する</a>
-      <a href="#partners" class="bb-btn-ghost" style="font-size:15px;font-weight:500;color:#10171C;background:#fff;border:1px solid #D7DEE2;text-decoration:none;padding:15px 30px;border-radius:9px">企業・協業の方へ</a>
+  <section id="top" class="hero">
+    <div class="hero-dot hero-dot-1"></div>
+    <div class="hero-dot hero-dot-2"></div>
+    <div data-rv class="hero-eyebrow">一橋大学公認 — 一橋コンピュータ研究会</div>
+    <h1 data-rv data-rv-delay="80" class="hero-title"><img src="uploads/LECTANGLE_LOGO_Opacity_BLACK.png" alt="Bashi.com" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" class="hero-logo-img"><span class="hero-logo-fallback">Bashi<span class="accent">.com</span></span></h1>
+    <div data-rv data-rv-delay="150" class="hero-subtitle">一橋の<span class="hero-subtitle-highlight">ITコミュニティ<span data-uline class="hero-underline"></span></span></div>
+    <p data-rv data-rv-delay="220" class="hero-lead">技術・プロダクト開発、ITを用いた課題解決、デジタルクリエイション。<br>ものづくりを軸に活動する、一橋大学公認の学生コミュニティです。</p>
+    <div data-rv data-rv-delay="260" class="hero-cta-row">
+      <a href="#join" class="bb-btn-primary btn btn-primary btn-lg btn-shadow-primary">入会する</a>
+      <a href="#partners" class="bb-btn-ghost btn btn-ghost btn-lg">企業・協業の方へ</a>
     </div>
-    <div data-rv data-rv-delay="340" style="opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;display:inline-flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:clamp(16px,3vw,30px);font-size:13.5px;color:#6A747C">
-      <span style="display:flex;align-items:center;gap:8px"><span style="width:7px;height:7px;border-radius:99px;background:#62C4CB"></span>一橋大学 公認団体</span>
-      <span style="width:1px;height:14px;background:#DDE3E7"></span>
-      <span>メンバー <strong style="color:#10171C;font-weight:600">50名</strong> 以上</span>
-      <span style="width:1px;height:14px;background:#DDE3E7"></span>
+    <div data-rv data-rv-delay="340" class="hero-stats">
+      <span class="hero-stat"><span class="hero-stat-dot"></span>一橋大学 公認団体</span>
+      <span class="hero-stat-divider"></span>
+      <span>メンバー <strong class="stat-strong">50名</strong> 以上</span>
+      <span class="hero-stat-divider"></span>
       <span>3つの活動領域</span>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" style="background:#F7F9FA;border-top:1px solid #EDF0F2;border-bottom:1px solid #EDF0F2">
-    <div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,104px) 24px">
-      <div data-rv style="opacity:0;transform:translateY(14px);transition:opacity .7s,transform .7s;display:flex;align-items:center;gap:16px;margin-bottom:42px">
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#11757F;font-weight:500">01</span>
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#9AA4AB;text-transform:uppercase">About</span>
-        <span style="flex:1;height:1px;background:#E2E7EA"></span>
+  <section id="about" class="section-tinted about">
+    <div class="section-inner">
+      <div data-rv class="eyebrow">
+        <span class="eyebrow-num">01</span>
+        <span class="eyebrow-label">About</span>
+        <span class="eyebrow-line"></span>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:clamp(34px,5vw,72px);align-items:start">
+      <div class="about-split">
         <div>
-          <h2 data-rv style="opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s;margin:0 0 22px;font-weight:700;font-size:clamp(28px,4vw,44px);line-height:1.22;letter-spacing:-.01em">つくる人が、<br>集まる場所。</h2>
-          <a data-rv data-rv-delay="60" href="Members.html" class="bb-link" style="opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s;display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:600;color:#0E6B74;text-decoration:none">メンバーを見る <span class="bb-arrow">→</span></a>
+          <h2 data-rv class="h2-hero-scale">つくる人が、<br>集まる場所。</h2>
+          <a data-rv data-rv-delay="60" href="Members.html" class="bb-link">メンバーを見る <span class="bb-arrow">→</span></a>
         </div>
         <div>
-          <p data-rv data-rv-delay="100" style="opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s;margin:0 0 20px;font-size:16px;line-height:2;color:#46515A">Bashi.com（バシコム）は、一橋大学公認の学生団体「一橋コンピュータ研究会」です。技術・プロダクト開発からITを用いた課題解決、デジタルクリエイションまで、ものづくりを軸に幅広く活動しています。</p>
-          <p data-rv data-rv-delay="180" style="opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s;margin:0;font-size:16px;line-height:2;color:#46515A">在籍メンバーは50名以上。学年・文理を問わず、初心者から経験者まで、それぞれのペースで学び合えるコミュニティを目指しています。</p>
+          <p data-rv data-rv-delay="100" class="about-copy">Bashi.com（バシコム）は、一橋大学公認の学生団体「一橋コンピュータ研究会」です。技術・プロダクト開発からITを用いた課題解決、デジタルクリエイションまで、ものづくりを軸に幅広く活動しています。</p>
+          <p data-rv data-rv-delay="180" class="about-copy">在籍メンバーは50名以上。学年・文理を問わず、初心者から経験者まで、それぞれのペースで学び合えるコミュニティを目指しています。</p>
         </div>
       </div>
-      <div data-rv style="opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:48px">
-        <div class="bb-card" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:26px 24px">
-          <div style="width:44px;height:44px;border-radius:12px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74;margin-bottom:16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17"/><path d="M8 13h3"/></svg></div>
-          <h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">週次のもくもく会</h3>
-          <p style="margin:0;font-size:13.5px;line-height:1.8;color:#56616A">それぞれの開発を持ち寄り、集まって手を動かす時間を定期的に設けています。</p>
+      <div data-rv class="about-features">
+        <div class="bb-card card-pad-md">
+          <div class="icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17"/><path d="M8 13h3"/></svg></div>
+          <h3 class="feature-title">週次のもくもく会</h3>
+          <p class="feature-desc">それぞれの開発を持ち寄り、集まって手を動かす時間を定期的に設けています。</p>
         </div>
-        <div class="bb-card" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:26px 24px">
-          <div style="width:44px;height:44px;border-radius:12px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74;margin-bottom:16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5h16v11H8.5L4 19.5z"/></svg></div>
-          <h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">Slack で気軽に相談</h3>
-          <p style="margin:0;font-size:13.5px;line-height:1.8;color:#56616A">わからないことも、思いついたアイデアも、いつでも投げかけられる雰囲気があります。</p>
+        <div class="bb-card card-pad-md">
+          <div class="icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5h16v11H8.5L4 19.5z"/></svg></div>
+          <h3 class="feature-title">Discord で気軽に相談</h3>
+          <p class="feature-desc">わからないことも、思いついたアイデアも、いつでも投げかけられる雰囲気があります。</p>
         </div>
-        <div class="bb-card" style="background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:26px 24px">
-          <div style="width:44px;height:44px;border-radius:12px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74;margin-bottom:16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="8" r="2.6"/><circle cx="16.5" cy="8" r="2.6"/><path d="M2.8 19a5 5 0 019.4 0"/><path d="M11.8 19a5 5 0 019.4 0"/></svg></div>
-          <h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">学年・学部混合のチーム</h3>
-          <p style="margin:0;font-size:13.5px;line-height:1.8;color:#56616A">先輩後輩、文系理系の垣根なく、興味を軸にチームを組んでプロジェクトを進めます。</p>
+        <div class="bb-card card-pad-md">
+          <div class="icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="8" r="2.6"/><circle cx="16.5" cy="8" r="2.6"/><path d="M2.8 19a5 5 0 019.4 0"/><path d="M11.8 19a5 5 0 019.4 0"/></svg></div>
+          <h3 class="feature-title">学年・学部混合のチーム</h3>
+          <p class="feature-desc">先輩後輩、文系理系の垣根なく、興味を軸にチームを組んでプロジェクトを進めます。</p>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:#E2E7EA;border:1px solid #E2E7EA;border-radius:14px;overflow:hidden;margin-top:48px">
-        <div data-rv style="opacity:0;transition:opacity .7s;background:#fff;padding:30px 28px">
-          <div data-count="50" data-suffix="+" style="font-weight:700;font-size:clamp(32px,4vw,46px);letter-spacing:-.02em;color:#10171C">0+</div>
-          <div style="font-size:13px;color:#6A747C;margin-top:4px">在籍メンバー</div>
+      <div class="about-stats">
+        <div data-rv class="stat-box">
+          <div data-count="50" data-suffix="+" class="stat-num">0+</div>
+          <div class="stat-label">在籍メンバー</div>
         </div>
-        <div data-rv data-rv-delay="60" style="opacity:0;transition:opacity .7s;background:#fff;padding:30px 28px">
-          <div data-count="3" style="font-weight:700;font-size:clamp(32px,4vw,46px);letter-spacing:-.02em;color:#10171C">0</div>
-          <div style="font-size:13px;color:#6A747C;margin-top:4px">活動領域</div>
+        <div data-rv data-rv-delay="60" class="stat-box">
+          <div data-count="3" class="stat-num">0</div>
+          <div class="stat-label">活動領域</div>
         </div>
-        <div data-rv data-rv-delay="120" style="opacity:0;transition:opacity .7s;background:#fff;padding:30px 28px">
-          <div style="font-weight:700;font-size:clamp(32px,4vw,46px);letter-spacing:-.02em;color:#10171C">公認</div>
-          <div style="font-size:13px;color:#6A747C;margin-top:4px">一橋大学公認団体</div>
+        <div data-rv data-rv-delay="120" class="stat-box">
+          <div class="stat-num">公認</div>
+          <div class="stat-label">一橋大学公認団体</div>
         </div>
-        <div data-rv data-rv-delay="180" style="opacity:0;transition:opacity .7s;background:#fff;padding:30px 28px">
-          <div style="font-weight:700;font-size:clamp(32px,4vw,46px);letter-spacing:-.02em;color:#10171C">文理<span style="font-size:.5em;font-weight:500;color:#6A747C">不問</span></div>
-          <div style="font-size:13px;color:#6A747C;margin-top:4px">どなたでも歓迎</div>
+        <div data-rv data-rv-delay="180" class="stat-box">
+          <div class="stat-num">文理<span style="font-size:.5em;font-weight:500;color:#6A747C">不問</span></div>
+          <div class="stat-label">どなたでも歓迎</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ACTIVITIES -->
-  <section id="activities" style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,104px) 24px">
-    <div data-rv style="opacity:0;transform:translateY(14px);transition:opacity .7s,transform .7s;display:flex;align-items:center;gap:16px;margin-bottom:18px">
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#11757F;font-weight:500">02</span>
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#9AA4AB;text-transform:uppercase">Activities</span>
-      <span style="flex:1;height:1px;background:#E2E7EA"></span>
+  <section id="activities" class="section-inner activities">
+    <div data-rv class="eyebrow">
+      <span class="eyebrow-num">02</span>
+      <span class="eyebrow-label">Activities</span>
+      <span class="eyebrow-line"></span>
     </div>
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;margin-bottom:50px">
-      <h2 data-rv data-rv-delay="80" style="opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;margin:0;font-weight:700;font-size:clamp(26px,3.6vw,42px);letter-spacing:-.01em">3つの領域で、ITに向き合う。</h2>
-      <a data-rv href="Activities.html" class="bb-link" style="opacity:0;transition:opacity .7s;display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:600;color:#0E6B74;text-decoration:none">活動の詳細を見る <span class="bb-arrow">→</span></a>
+    <div class="section-head-row">
+      <h2 data-rv data-rv-delay="80" class="h2-section">3つの領域で、ITに向き合う。</h2>
+      <a data-rv href="Activities.html" class="bb-link">活動の詳細を見る <span class="bb-arrow">→</span></a>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px">
+    <div class="activities-grid">
       <!-- pillar 01 -->
-      <a href="Activities.html" data-rv data-rv-delay="0" class="bb-pill" style="opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s;text-decoration:none;color:inherit;display:block;background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:32px 28px 34px;position:relative;overflow:hidden">
+      <a href="Activities.html" data-rv data-rv-delay="0" class="bb-pill pillar">
         <div class="bb-pillbar"></div>
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px">
-          <div style="width:50px;height:50px;border-radius:13px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-5 6 5 6"/><path d="M16 6l5 6-5 6"/><path d="M14 4l-4 16"/></svg></div>
-          <span style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;color:#B4BEC4">01</span>
+        <div class="pillar-head">
+          <div class="pillar-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-5 6 5 6"/><path d="M16 6l5 6-5 6"/><path d="M14 4l-4 16"/></svg></div>
+          <span class="pillar-num">01</span>
         </div>
-        <h3 style="margin:0 0 13px;font-weight:700;font-size:21px;letter-spacing:-.01em">技術・プロダクト開発</h3>
-        <p style="margin:0 0 22px;font-size:14.5px;line-height:1.9;color:#56616A">Web・モバイル・AI まで。アイデアを、実際に動くプロダクトへと形にします。</p>
-        <div style="display:flex;flex-wrap:wrap;gap:7px">
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#46515A;background:#F2F5F6;border:1px solid #E6EBED;padding:4px 9px;border-radius:6px">Web</span>
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#46515A;background:#F2F5F6;border:1px solid #E6EBED;padding:4px 9px;border-radius:6px">App</span>
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#46515A;background:#F2F5F6;border:1px solid #E6EBED;padding:4px 9px;border-radius:6px">AI</span>
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#46515A;background:#F2F5F6;border:1px solid #E6EBED;padding:4px 9px;border-radius:6px">Infra</span>
+        <h3 class="pillar-title">技術・プロダクト開発</h3>
+        <p class="pillar-desc">Web・モバイル・AI まで。アイデアを、実際に動くプロダクトへと形にします。</p>
+        <div class="tag-row">
+          <span class="tag">Web</span>
+          <span class="tag">App</span>
+          <span class="tag">AI</span>
+          <span class="tag">Infra</span>
         </div>
       </a>
       <!-- pillar 02 -->
-      <a href="Activities.html" data-rv data-rv-delay="110" class="bb-pill" style="opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s;text-decoration:none;color:inherit;display:block;background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:32px 28px 34px;position:relative;overflow:hidden">
+      <a href="Activities.html" data-rv data-rv-delay="110" class="bb-pill pillar">
         <div class="bb-pillbar"></div>
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px">
-          <div style="width:50px;height:50px;border-radius:13px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3"/><path d="M12 18.5v3"/><path d="M2.5 12h3"/><path d="M18.5 12h3"/><path d="M5.6 5.6l2 2"/><path d="M16.4 16.4l2 2"/></svg></div>
-          <span style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;color:#B4BEC4">02</span>
+        <div class="pillar-head">
+          <div class="pillar-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3"/><path d="M12 18.5v3"/><path d="M2.5 12h3"/><path d="M18.5 12h3"/><path d="M5.6 5.6l2 2"/><path d="M16.4 16.4l2 2"/></svg></div>
+          <span class="pillar-num">02</span>
         </div>
-        <h3 style="margin:0 0 13px;font-weight:700;font-size:21px;letter-spacing:-.01em">ITを用いた課題解決</h3>
-        <p style="margin:0 0 22px;font-size:14.5px;line-height:1.9;color:#56616A">学内外のリアルな課題に向き合い、テクノロジーで仕組みごと解決します。</p>
-        <div style="display:flex;flex-wrap:wrap;gap:7px">
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#46515A;background:#F2F5F6;border:1px solid #E6EBED;padding:4px 9px;border-radius:6px">業務改善</span>
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#46515A;background:#F2F5F6;border:1px solid #E6EBED;padding:4px 9px;border-radius:6px">自動化</span>
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#46515A;background:#F2F5F6;border:1px solid #E6EBED;padding:4px 9px;border-radius:6px">Data</span>
+        <h3 class="pillar-title">ITを用いた課題解決</h3>
+        <p class="pillar-desc">学内外のリアルな課題に向き合い、テクノロジーで仕組みごと解決します。</p>
+        <div class="tag-row">
+          <span class="tag">業務改善</span>
+          <span class="tag">自動化</span>
+          <span class="tag">Data</span>
         </div>
       </a>
       <!-- pillar 03 -->
-      <a href="Activities.html" data-rv data-rv-delay="220" class="bb-pill" style="opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s;text-decoration:none;color:inherit;display:block;background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:32px 28px 34px;position:relative;overflow:hidden">
+      <a href="Activities.html" data-rv data-rv-delay="220" class="bb-pill pillar">
         <div class="bb-pillbar"></div>
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px">
-          <div style="width:50px;height:50px;border-radius:13px;background:#EAF6F7;display:flex;align-items:center;justify-content:center;color:#0E6B74"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.3 5.8L20.5 9.4l-4.4 4.3 1.1 6.1L12 16.9 6.8 19.8l1.1-6.1L3.5 9.4l6.2-.6z"/></svg></div>
-          <span style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;color:#B4BEC4">03</span>
+        <div class="pillar-head">
+          <div class="pillar-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.3 5.8L20.5 9.4l-4.4 4.3 1.1 6.1L12 16.9 6.8 19.8l1.1-6.1L3.5 9.4l6.2-.6z"/></svg></div>
+          <span class="pillar-num">03</span>
         </div>
-        <h3 style="margin:0 0 13px;font-weight:700;font-size:21px;letter-spacing:-.01em">デジタルクリエイション</h3>
-        <p style="margin:0 0 22px;font-size:14.5px;line-height:1.9;color:#56616A">デザイン・映像・ゲーム。表現としての IT で、つくる楽しさを広げます。</p>
-        <div style="display:flex;flex-wrap:wrap;gap:7px">
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#46515A;background:#F2F5F6;border:1px solid #E6EBED;padding:4px 9px;border-radius:6px">UI/UX</span>
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#46515A;background:#F2F5F6;border:1px solid #E6EBED;padding:4px 9px;border-radius:6px">映像</span>
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#46515A;background:#F2F5F6;border:1px solid #E6EBED;padding:4px 9px;border-radius:6px">Game</span>
+        <h3 class="pillar-title">デジタルクリエイション</h3>
+        <p class="pillar-desc">デザイン・映像・ゲーム。表現としての IT で、つくる楽しさを広げます。</p>
+        <div class="tag-row">
+          <span class="tag">UI/UX</span>
+          <span class="tag">映像</span>
+          <span class="tag">Game</span>
         </div>
       </a>
     </div>
   </section>
 
   <!-- WORKS -->
-  <section id="works" style="background:#F7F9FA;border-top:1px solid #EDF0F2;border-bottom:1px solid #EDF0F2">
-    <div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,104px) 24px">
-      <div data-rv style="opacity:0;transform:translateY(14px);transition:opacity .7s,transform .7s;display:flex;align-items:center;gap:16px;margin-bottom:18px">
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#11757F;font-weight:500">03</span>
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#9AA4AB;text-transform:uppercase">Works</span>
-        <span style="flex:1;height:1px;background:#E2E7EA"></span>
+  <section id="works" class="section-tinted works">
+    <div class="section-inner">
+      <div data-rv class="eyebrow">
+        <span class="eyebrow-num">03</span>
+        <span class="eyebrow-label">Works</span>
+        <span class="eyebrow-line"></span>
       </div>
-      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;margin-bottom:42px">
-        <h2 data-rv data-rv-delay="80" style="opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;margin:0;font-weight:700;font-size:clamp(26px,3.6vw,42px);letter-spacing:-.01em">手を動かした、その証。</h2>
-        <span data-rv style="opacity:0;transition:opacity .7s;font-size:12.5px;color:#8A949B;max-width:260px;line-height:1.7">※ 実績は一例です。実際の制作物に差し替えできます。</span>
+      <div class="section-head-row">
+        <h2 data-rv data-rv-delay="80" class="h2-section">手を動かした、その証。</h2>
+        <span data-rv class="note-muted">※ 実績は一例です。実際の制作物に差し替えできます。</span>
       </div>
-      <div class="bb-scroll" style="display:flex;gap:18px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory;margin:0 -24px;padding-left:24px;padding-right:24px">
+      <div class="bb-scroll">
         <!-- flagship -->
-        <div data-rv class="bb-card" style="opacity:0;transform:translateY(24px);flex:none;width:min(360px,82vw);scroll-snap-align:start;background:#fff;border:1px solid #E6EBED;border-radius:16px;overflow:hidden">
-          <div style="padding:22px;border-bottom:1px solid #EEF1F3;background:linear-gradient(160deg,#F3F8F8,#fff)">
-            <span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#0E6B74;background:#DBF1F2;border:1px solid #BFE6E8;padding:3px 8px;border-radius:5px;margin-bottom:16px">FLAGSHIP</span>
-            <div style="background:#fff;border:1px solid #E6EBED;border-radius:9px;padding:12px">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:9px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#0E6B74">時間割</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#A9B2B8">Mon–Fri</span></div>
-              <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:4px">
-                <div style="height:20px;border-radius:4px;background:#62C4CB"></div><div style="height:20px;border-radius:4px;background:#EFF2F4"></div><div style="height:20px;border-radius:4px;background:#AEE2E5"></div><div style="height:20px;border-radius:4px;background:#EFF2F4"></div><div style="height:20px;border-radius:4px;background:#62C4CB"></div>
-                <div style="height:20px;border-radius:4px;background:#EFF2F4"></div><div style="height:20px;border-radius:4px;background:#62C4CB"></div><div style="height:20px;border-radius:4px;background:#EFF2F4"></div><div style="height:20px;border-radius:4px;background:#CDEAEC"></div><div style="height:20px;border-radius:4px;background:#EFF2F4"></div>
-                <div style="height:20px;border-radius:4px;background:#CDEAEC"></div><div style="height:20px;border-radius:4px;background:#EFF2F4"></div><div style="height:20px;border-radius:4px;background:#AEE2E5"></div><div style="height:20px;border-radius:4px;background:#EFF2F4"></div><div style="height:20px;border-radius:4px;background:#CDEAEC"></div>
+        <div data-rv class="bb-card scroll-card">
+          <div class="work-flagship-head">
+            <span class="tag-flagship">FLAGSHIP</span>
+            <div class="tt-box">
+              <div class="tt-box-head"><span class="tt-label">時間割</span><span class="tt-sub">Mon–Fri</span></div>
+              <div class="tt-grid">
+                <div class="tt-cell tt-a"></div><div class="tt-cell tt-b"></div><div class="tt-cell tt-c"></div><div class="tt-cell tt-b"></div><div class="tt-cell tt-a"></div>
+                <div class="tt-cell tt-b"></div><div class="tt-cell tt-a"></div><div class="tt-cell tt-b"></div><div class="tt-cell tt-d"></div><div class="tt-cell tt-b"></div>
+                <div class="tt-cell tt-d"></div><div class="tt-cell tt-b"></div><div class="tt-cell tt-c"></div><div class="tt-cell tt-b"></div><div class="tt-cell tt-d"></div>
               </div>
             </div>
           </div>
-          <div style="padding:24px">
-            <h3 style="margin:0 0 10px;font-weight:700;font-size:19px">バシコマ（時間割アプリ）</h3>
-            <p style="margin:0 0 14px;font-size:14px;line-height:1.85;color:#56616A">多くの一橋生に使われている時間割アプリ。当団体のプロジェクトの一つとして生まれました。</p>
-            <p style="margin:0;font-size:11.5px;line-height:1.7;color:#8A949B;border-top:1px solid #EEF1F3;padding-top:13px">※ 現在の開発・運営は当団体とは別の主体によって行われています。</p>
+          <div class="work-body">
+            <h3 class="work-title">バシコマ（時間割アプリ）</h3>
+            <p class="work-desc work-desc--gap">多くの一橋生に使われている時間割アプリ。当団体のプロジェクトの一つとして生まれました。</p>
+            <p class="work-note">※ 現在の開発・運営は当団体とは別の主体によって行われています。</p>
           </div>
         </div>
         <!-- sample 1 -->
-        <div data-rv data-rv-delay="100" class="bb-card" style="opacity:0;transform:translateY(24px);flex:none;width:min(360px,82vw);scroll-snap-align:start;background:#fff;border:1px solid #E6EBED;border-radius:16px;overflow:hidden">
-          <div style="height:150px;background:linear-gradient(150deg,#EEF3F4,#E2EEEF);display:flex;align-items:center;justify-content:center;position:relative;border-bottom:1px solid #EEF1F3">
-            <span style="position:absolute;top:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#6A747C;background:#fff;border:1px solid #E6EBED;padding:3px 8px;border-radius:5px">SAMPLE</span>
-            <span style="color:#9DB4B8;font-size:34px">◧</span>
+        <div data-rv data-rv-delay="100" class="bb-card scroll-card">
+          <div class="work-thumb">
+            <span class="tag-sample">SAMPLE</span>
+            <span class="work-glyph">◧</span>
           </div>
-          <div style="padding:24px">
-            <h3 style="margin:0 0 10px;font-weight:700;font-size:19px">学内向け Web サービス</h3>
-            <p style="margin:0;font-size:14px;line-height:1.85;color:#56616A">学生生活をなめらかにする Web プロダクトの企画・開発（制作例）。</p>
+          <div class="work-body">
+            <h3 class="work-title">学内向け Web サービス</h3>
+            <p class="work-desc">学生生活をなめらかにする Web プロダクトの企画・開発（制作例）。</p>
           </div>
         </div>
         <!-- sample 2 -->
-        <div data-rv data-rv-delay="200" class="bb-card" style="opacity:0;transform:translateY(24px);flex:none;width:min(360px,82vw);scroll-snap-align:start;background:#fff;border:1px solid #E6EBED;border-radius:16px;overflow:hidden">
-          <div style="height:150px;background:linear-gradient(150deg,#EEF3F4,#E2EEEF);display:flex;align-items:center;justify-content:center;position:relative;border-bottom:1px solid #EEF1F3">
-            <span style="position:absolute;top:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#6A747C;background:#fff;border:1px solid #E6EBED;padding:3px 8px;border-radius:5px">SAMPLE</span>
-            <span style="color:#9DB4B8;font-size:34px">▤</span>
+        <div data-rv data-rv-delay="200" class="bb-card scroll-card">
+          <div class="work-thumb">
+            <span class="tag-sample">SAMPLE</span>
+            <span class="work-glyph">▤</span>
           </div>
-          <div style="padding:24px">
-            <h3 style="margin:0 0 10px;font-weight:700;font-size:19px">ハッカソン・制作</h3>
-            <p style="margin:0;font-size:14px;line-height:1.85;color:#56616A">チーム開発を通じて、短期間でアイデアを形にします（制作例）。</p>
+          <div class="work-body">
+            <h3 class="work-title">ハッカソン・制作</h3>
+            <p class="work-desc">チーム開発を通じて、短期間でアイデアを形にします（制作例）。</p>
           </div>
         </div>
         <!-- sample 3 -->
-        <div data-rv data-rv-delay="300" class="bb-card" style="opacity:0;transform:translateY(24px);flex:none;width:min(360px,82vw);scroll-snap-align:start;background:#fff;border:1px solid #E6EBED;border-radius:16px;overflow:hidden">
-          <div style="height:150px;background:linear-gradient(150deg,#EEF3F4,#E2EEEF);display:flex;align-items:center;justify-content:center;position:relative;border-bottom:1px solid #EEF1F3">
-            <span style="position:absolute;top:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#6A747C;background:#fff;border:1px solid #E6EBED;padding:3px 8px;border-radius:5px">SAMPLE</span>
-            <span style="color:#9DB4B8;font-size:34px">▥</span>
+        <div data-rv data-rv-delay="300" class="bb-card scroll-card">
+          <div class="work-thumb">
+            <span class="tag-sample">SAMPLE</span>
+            <span class="work-glyph">▥</span>
           </div>
-          <div style="padding:24px">
-            <h3 style="margin:0 0 10px;font-weight:700;font-size:19px">LT・勉強会アーカイブ</h3>
-            <p style="margin:0;font-size:14px;line-height:1.85;color:#56616A">学びを共有し合う、発表と記録の場（制作例）。</p>
+          <div class="work-body">
+            <h3 class="work-title">LT・勉強会アーカイブ</h3>
+            <p class="work-desc">学びを共有し合う、発表と記録の場（制作例）。</p>
           </div>
         </div>
       </div>
@@ -253,43 +253,43 @@
   </section>
 
   <!-- JOIN -->
-  <section id="join" style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,104px) 24px">
-    <div data-rv style="opacity:0;transform:translateY(14px);transition:opacity .7s,transform .7s;display:flex;align-items:center;gap:16px;margin-bottom:18px">
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#11757F;font-weight:500">04</span>
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#9AA4AB;text-transform:uppercase">Join</span>
-      <span style="flex:1;height:1px;background:#E2E7EA"></span>
+  <section id="join" class="section-inner join">
+    <div data-rv class="eyebrow">
+      <span class="eyebrow-num">04</span>
+      <span class="eyebrow-label">Join</span>
+      <span class="eyebrow-line"></span>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(30px,4vw,56px);align-items:start">
+    <div class="join-grid">
       <div>
-        <h2 data-rv data-rv-delay="80" style="opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;margin:0 0 18px;font-weight:700;font-size:clamp(28px,4vw,44px);line-height:1.18;letter-spacing:-.01em">はじめよう、<br>ここから。</h2>
-        <p data-rv data-rv-delay="140" style="opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;margin:0 0 26px;font-size:15.5px;line-height:1.95;color:#56616A">「やってみたい」さえあれば大丈夫。学年・文理は問いません。新入生も上級生も、いつでも歓迎します。</p>
-        <div data-rv data-rv-delay="200" style="opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px">
-          <span style="font-size:13px;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:8px 14px;border-radius:99px">学年不問</span>
-          <span style="font-size:13px;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:8px 14px;border-radius:99px">文理不問</span>
-          <span style="font-size:13px;color:#0E6B74;background:#EAF6F7;border:1px solid #CFE9EB;padding:8px 14px;border-radius:99px">初心者歓迎</span>
+        <h2 data-rv data-rv-delay="80" class="h2-hero-scale">はじめよう、<br>ここから。</h2>
+        <p data-rv data-rv-delay="140" class="lead">「やってみたい」さえあれば大丈夫。学年・文理は問いません。新入生も上級生も、いつでも歓迎します。</p>
+        <div data-rv data-rv-delay="200" class="pill-row">
+          <span class="pill">学年不問</span>
+          <span class="pill">文理不問</span>
+          <span class="pill">初心者歓迎</span>
         </div>
-        <a data-rv data-rv-delay="260" href="#contact" class="bb-btn-primary" style="opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;display:inline-block;font-size:15px;font-weight:600;color:#08222a;background:#62C4CB;text-decoration:none;padding:15px 30px;border-radius:9px;box-shadow:0 10px 24px rgba(98,196,203,.28)">入会について問い合わせる</a>
+        <a data-rv data-rv-delay="260" href="#contact" class="bb-btn-primary btn btn-primary btn-lg btn-shadow-primary">入会について問い合わせる</a>
       </div>
-      <div data-rv data-rv-delay="160" style="opacity:0;transform:translateY(22px);transition:opacity .9s,transform .9s;display:flex;flex-direction:column">
-        <div style="display:flex;gap:22px;align-items:flex-start;padding:24px 0;border-bottom:1px solid #EAEEF0">
-          <div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;color:#fff;background:#62C4CB;width:34px;height:34px;border-radius:99px;display:flex;align-items:center;justify-content:center;flex-shrink:0">1</div>
+      <div data-rv data-rv-delay="160" class="join-steps">
+        <div class="join-step">
+          <div class="step-num">1</div>
           <div>
-            <h4 style="margin:0 0 6px;font-weight:700;font-size:16.5px">コンタクト</h4>
-            <p style="margin:0;font-size:14px;line-height:1.8;color:#56616A">SNS やお問い合わせフォームから、気軽に連絡してください。</p>
+            <h4 class="step-title">コンタクト</h4>
+            <p class="step-desc">SNS やお問い合わせフォームから、気軽に連絡してください。</p>
           </div>
         </div>
-        <div style="display:flex;gap:22px;align-items:flex-start;padding:24px 0;border-bottom:1px solid #EAEEF0">
-          <div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;color:#fff;background:#62C4CB;width:34px;height:34px;border-radius:99px;display:flex;align-items:center;justify-content:center;flex-shrink:0">2</div>
+        <div class="join-step">
+          <div class="step-num">2</div>
           <div>
-            <h4 style="margin:0 0 6px;font-weight:700;font-size:16.5px">説明会・体験</h4>
-            <p style="margin:0;font-size:14px;line-height:1.8;color:#56616A">活動内容を知り、実際の雰囲気を体験できます。</p>
+            <h4 class="step-title">説明会・体験</h4>
+            <p class="step-desc">活動内容を知り、実際の雰囲気を体験できます。</p>
           </div>
         </div>
-        <div style="display:flex;gap:22px;align-items:flex-start;padding:24px 0;border-bottom:1px solid #EAEEF0">
-          <div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;color:#fff;background:#62C4CB;width:34px;height:34px;border-radius:99px;display:flex;align-items:center;justify-content:center;flex-shrink:0">3</div>
+        <div class="join-step">
+          <div class="step-num">3</div>
           <div>
-            <h4 style="margin:0 0 6px;font-weight:700;font-size:16.5px">ジョイン</h4>
-            <p style="margin:0;font-size:14px;line-height:1.8;color:#56616A">興味のある領域・プロジェクトから、活動をスタート。</p>
+            <h4 class="step-title">ジョイン</h4>
+            <p class="step-desc">興味のある領域・プロジェクトから、活動をスタート。</p>
           </div>
         </div>
       </div>
@@ -297,150 +297,150 @@
   </section>
 
   <!-- PARTNERS -->
-  <section id="partners" style="background:#0E2F35;color:#EAF3F4;position:relative;overflow:hidden">
-    <div style="position:absolute;top:-20%;right:-8%;width:46vw;height:46vw;max-width:560px;max-height:560px;background:radial-gradient(circle,rgba(98,196,203,.22),transparent 65%);filter:blur(10px)"></div>
-    <div style="position:relative;max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,104px) 24px">
-      <div data-rv style="opacity:0;transform:translateY(14px);transition:opacity .7s,transform .7s;display:flex;align-items:center;gap:16px;margin-bottom:34px">
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#7FD9DE;font-weight:500">05</span>
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#6E9499;text-transform:uppercase">For Partners</span>
-        <span style="flex:1;height:1px;background:rgba(255,255,255,.14)"></span>
-        <span style="font-weight:700;font-size:16px;letter-spacing:-.02em;color:#fff;opacity:.9">Bashi<span style="color:#7FD9DE">.com</span></span>
+  <section id="partners" class="section-dark partners">
+    <div class="section-glow"></div>
+    <div class="section-inner">
+      <div data-rv class="eyebrow">
+        <span class="eyebrow-num">05</span>
+        <span class="eyebrow-label">For Partners</span>
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-brand">Bashi<span class="accent-dark">.com</span></span>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:clamp(30px,4vw,56px);align-items:start;margin-bottom:46px">
-        <h2 data-rv data-rv-delay="80" style="opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;margin:0;font-weight:700;font-size:clamp(26px,3.6vw,42px);line-height:1.2;letter-spacing:-.01em;color:#fff">企業・協業の<br>みなさまへ。</h2>
-        <p data-rv data-rv-delay="140" style="opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;margin:0;font-size:15.5px;line-height:1.95;color:#B6CACD;padding-top:6px">50名以上の学生が技術を軸に活動するコミュニティとして、共同開発・採用接点・イベント連携など、企業のみなさまとの取り組みを歓迎しています。お気軽にご相談ください。</p>
+      <div class="partners-head">
+        <h2 data-rv data-rv-delay="80" class="h2-section-dark">企業・協業の<br>みなさまへ。</h2>
+        <p data-rv data-rv-delay="140" class="lead">50名以上の学生が技術を軸に活動するコミュニティとして、共同開発・採用接点・イベント連携など、企業のみなさまとの取り組みを歓迎しています。お気軽にご相談ください。</p>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px">
+      <div class="partners-grid">
         <!-- partner 1 -->
-        <div data-rv data-rv-delay="0" class="bb-partnercard" style="opacity:0;transform:translateY(22px);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:13px;padding:26px 24px">
-          <div style="width:46px;height:46px;border-radius:12px;background:rgba(98,196,203,.14);display:flex;align-items:center;justify-content:center;color:#7FD9DE;margin-bottom:16px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v5l-4.5 8.5A2 2 0 007.3 20h9.4a2 2 0 001.8-3.5L14 8V3"/><path d="M8 14h8"/></svg></div>
-          <h3 style="margin:0 0 9px;font-weight:700;font-size:16.5px;color:#fff">共同開発・PoC</h3>
-          <p style="margin:0;font-size:13.5px;line-height:1.8;color:#9FB6B9">技術を軸に、プロトタイプや検証プロジェクトをご一緒します。</p>
+        <div data-rv data-rv-delay="0" class="bb-partnercard partner-card">
+          <div class="partner-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v5l-4.5 8.5A2 2 0 007.3 20h9.4a2 2 0 001.8-3.5L14 8V3"/><path d="M8 14h8"/></svg></div>
+          <h3 class="partner-title">共同開発・PoC</h3>
+          <p class="partner-desc">技術を軸に、プロトタイプや検証プロジェクトをご一緒します。</p>
         </div>
         <!-- partner 2 -->
-        <div data-rv data-rv-delay="90" class="bb-partnercard" style="opacity:0;transform:translateY(22px);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:13px;padding:26px 24px">
-          <div style="width:46px;height:46px;border-radius:12px;background:rgba(98,196,203,.14);display:flex;align-items:center;justify-content:center;color:#7FD9DE;margin-bottom:16px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0111 0"/><path d="M16 5.2a3.2 3.2 0 010 6"/><path d="M17.5 20a5.5 5.5 0 00-3-4.9"/></svg></div>
-          <h3 style="margin:0 0 9px;font-weight:700;font-size:16.5px;color:#fff">採用・インターン接点</h3>
-          <p style="margin:0;font-size:13.5px;line-height:1.8;color:#9FB6B9">50名以上の学生コミュニティとの接点づくりに。</p>
+        <div data-rv data-rv-delay="90" class="bb-partnercard partner-card">
+          <div class="partner-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0111 0"/><path d="M16 5.2a3.2 3.2 0 010 6"/><path d="M17.5 20a5.5 5.5 0 00-3-4.9"/></svg></div>
+          <h3 class="partner-title">採用・インターン接点</h3>
+          <p class="partner-desc">50名以上の学生コミュニティとの接点づくりに。</p>
         </div>
         <!-- partner 3 -->
-        <div data-rv data-rv-delay="180" class="bb-partnercard" style="opacity:0;transform:translateY(22px);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:13px;padding:26px 24px">
-          <div style="width:46px;height:46px;border-radius:12px;background:rgba(98,196,203,.14);display:flex;align-items:center;justify-content:center;color:#7FD9DE;margin-bottom:16px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M8 14h3"/></svg></div>
-          <h3 style="margin:0 0 9px;font-weight:700;font-size:16.5px;color:#fff">イベント協賛・登壇</h3>
-          <p style="margin:0;font-size:13.5px;line-height:1.8;color:#9FB6B9">勉強会・LT・ハッカソンなどでの連携を歓迎します。</p>
+        <div data-rv data-rv-delay="180" class="bb-partnercard partner-card">
+          <div class="partner-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M8 14h3"/></svg></div>
+          <h3 class="partner-title">イベント協賛・登壇</h3>
+          <p class="partner-desc">勉強会・LT・ハッカソンなどでの連携を歓迎します。</p>
         </div>
         <!-- partner 4 -->
-        <div data-rv data-rv-delay="270" class="bb-partnercard" style="opacity:0;transform:translateY(22px);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:13px;padding:26px 24px">
-          <div style="width:46px;height:46px;border-radius:12px;background:rgba(98,196,203,.14);display:flex;align-items:center;justify-content:center;color:#7FD9DE;margin-bottom:16px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="3"/><circle cx="17" cy="6" r="2.6"/><circle cx="17" cy="18" r="2.6"/><path d="M9.6 10.6l4.8-3"/><path d="M9.6 13.4l4.8 3"/></svg></div>
-          <h3 style="margin:0 0 9px;font-weight:700;font-size:16.5px;color:#fff">技術コミュニティ連携</h3>
-          <p style="margin:0;font-size:13.5px;line-height:1.8;color:#9FB6B9">学外の団体・企業コミュニティとのつながりづくり。</p>
+        <div data-rv data-rv-delay="270" class="bb-partnercard partner-card">
+          <div class="partner-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="3"/><circle cx="17" cy="6" r="2.6"/><circle cx="17" cy="18" r="2.6"/><path d="M9.6 10.6l4.8-3"/><path d="M9.6 13.4l4.8 3"/></svg></div>
+          <h3 class="partner-title">技術コミュニティ連携</h3>
+          <p class="partner-desc">学外の団体・企業コミュニティとのつながりづくり。</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" style="max-width:840px;margin:0 auto;padding:clamp(56px,8vw,104px) 24px">
-    <div data-rv style="opacity:0;transform:translateY(14px);transition:opacity .7s,transform .7s;display:flex;align-items:center;gap:16px;margin-bottom:40px">
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#11757F;font-weight:500">06</span>
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#9AA4AB;text-transform:uppercase">FAQ</span>
-      <span style="flex:1;height:1px;background:#E2E7EA"></span>
+  <section id="faq" class="section-inner faq">
+    <div data-rv class="eyebrow">
+      <span class="eyebrow-num">06</span>
+      <span class="eyebrow-label">FAQ</span>
+      <span class="eyebrow-line"></span>
     </div>
-    <div id="bb-faq" style="display:flex;flex-direction:column">
-      <div data-rv class="bb-faq-item" style="opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;border-bottom:1px solid #E7ECEE">
-        <button class="bb-faq-q" aria-expanded="true" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:24px 4px;color:#10171C">
-          <span style="font-weight:600;font-size:16.5px;line-height:1.45">初心者でも入れますか？</span>
-          <span class="bb-faq-icon" style="flex-shrink:0;color:#11757F;font-size:22px;line-height:1;transition:transform .3s;transform:rotate(45deg)">+</span>
+    <div id="bb-faq">
+      <div data-rv class="bb-faq-item">
+        <button class="bb-faq-q" aria-expanded="true">
+          <span class="faq-question">初心者でも入れますか？</span>
+          <span class="bb-faq-icon" style="transform:rotate(45deg)">+</span>
         </button>
-        <div class="bb-faq-a" style="padding:0 4px 26px;font-size:14.5px;line-height:1.9;color:#56616A">はい。多くのメンバーが大学からプログラミングやものづくりを始めています。学ぶ環境と仲間がそろっています。</div>
+        <div class="bb-faq-a">はい。多くのメンバーが大学からプログラミングやものづくりを始めています。学ぶ環境と仲間がそろっています。</div>
       </div>
-      <div data-rv class="bb-faq-item" style="opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;border-bottom:1px solid #E7ECEE">
-        <button class="bb-faq-q" aria-expanded="false" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:24px 4px;color:#10171C">
-          <span style="font-weight:600;font-size:16.5px;line-height:1.45">文系でも大丈夫ですか？</span>
-          <span class="bb-faq-icon" style="flex-shrink:0;color:#11757F;font-size:22px;line-height:1;transition:transform .3s;transform:rotate(0deg)">+</span>
+      <div data-rv class="bb-faq-item">
+        <button class="bb-faq-q" aria-expanded="false">
+          <span class="faq-question">文系でも大丈夫ですか？</span>
+          <span class="bb-faq-icon" style="transform:rotate(0deg)">+</span>
         </button>
-        <div class="bb-faq-a" style="display:none;padding:0 4px 26px;font-size:14.5px;line-height:1.9;color:#56616A">もちろんです。文理を問わず活動しており、それぞれの興味から関われるプロジェクトがあります。</div>
+        <div class="bb-faq-a" style="display:none">もちろんです。文理を問わず活動しており、それぞれの興味から関われるプロジェクトがあります。</div>
       </div>
-      <div data-rv class="bb-faq-item" style="opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;border-bottom:1px solid #E7ECEE">
-        <button class="bb-faq-q" aria-expanded="false" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:24px 4px;color:#10171C">
-          <span style="font-weight:600;font-size:16.5px;line-height:1.45">活動の頻度はどのくらいですか？</span>
-          <span class="bb-faq-icon" style="flex-shrink:0;color:#11757F;font-size:22px;line-height:1;transition:transform .3s;transform:rotate(0deg)">+</span>
+      <div data-rv class="bb-faq-item">
+        <button class="bb-faq-q" aria-expanded="false">
+          <span class="faq-question">活動の頻度はどのくらいですか？</span>
+          <span class="bb-faq-icon" style="transform:rotate(0deg)">+</span>
         </button>
-        <div class="bb-faq-a" style="display:none;padding:0 4px 26px;font-size:14.5px;line-height:1.9;color:#56616A">プロジェクト単位で柔軟に動いています。学業やほかの活動と両立しながら、無理のない範囲で参加できます。</div>
+        <div class="bb-faq-a" style="display:none">プロジェクト単位で柔軟に動いています。学業やほかの活動と両立しながら、無理のない範囲で参加できます。</div>
       </div>
-      <div data-rv class="bb-faq-item" style="opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;border-bottom:1px solid #E7ECEE">
-        <button class="bb-faq-q" aria-expanded="false" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:24px 4px;color:#10171C">
-          <span style="font-weight:600;font-size:16.5px;line-height:1.45">費用はかかりますか？</span>
-          <span class="bb-faq-icon" style="flex-shrink:0;color:#11757F;font-size:22px;line-height:1;transition:transform .3s;transform:rotate(0deg)">+</span>
+      <div data-rv class="bb-faq-item">
+        <button class="bb-faq-q" aria-expanded="false">
+          <span class="faq-question">費用はかかりますか？</span>
+          <span class="bb-faq-icon" style="transform:rotate(0deg)">+</span>
         </button>
-        <div class="bb-faq-a" style="display:none;padding:0 4px 26px;font-size:14.5px;line-height:1.9;color:#56616A">詳細は説明会やお問い合わせの際にご案内します。まずはお気軽にご連絡ください。</div>
+        <div class="bb-faq-a" style="display:none">詳細は説明会やお問い合わせの際にご案内します。まずはお気軽にご連絡ください。</div>
       </div>
-      <div data-rv class="bb-faq-item" style="opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;border-bottom:1px solid #E7ECEE">
-        <button class="bb-faq-q" aria-expanded="false" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:24px 4px;color:#10171C">
-          <span style="font-weight:600;font-size:16.5px;line-height:1.45">企業ですが相談できますか？</span>
-          <span class="bb-faq-icon" style="flex-shrink:0;color:#11757F;font-size:22px;line-height:1;transition:transform .3s;transform:rotate(0deg)">+</span>
+      <div data-rv class="bb-faq-item">
+        <button class="bb-faq-q" aria-expanded="false">
+          <span class="faq-question">企業ですが相談できますか？</span>
+          <span class="bb-faq-icon" style="transform:rotate(0deg)">+</span>
         </button>
-        <div class="bb-faq-a" style="display:none;padding:0 4px 26px;font-size:14.5px;line-height:1.9;color:#56616A">はい。「企業・協業の方へ」またはお問い合わせよりご連絡ください。共同開発や採用接点などに対応しています。</div>
+        <div class="bb-faq-a" style="display:none">はい。「企業・協業の方へ」またはお問い合わせよりご連絡ください。共同開発や採用接点などに対応しています。</div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" style="background:#F7F9FA;border-top:1px solid #EDF0F2">
-    <div style="max-width:1180px;margin:0 auto;padding:clamp(60px,9vw,112px) 24px clamp(40px,6vw,64px)">
-      <div data-rv style="opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;text-align:center;margin-bottom:50px">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#11757F;text-transform:uppercase;margin-bottom:20px">07 — Contact</div>
-        <h2 style="margin:0 0 16px;font-weight:700;font-size:clamp(32px,5.5vw,60px);letter-spacing:-.02em;line-height:1.1">一緒に、つくろう。</h2>
-        <p style="margin:0;font-size:15.5px;color:#56616A;line-height:1.85">入会のご相談も、企業のみなさまからのお声がけも、どちらも歓迎です。</p>
+  <section id="contact" class="section-tinted-top">
+    <div class="contact-inner">
+      <div data-rv class="contact-head">
+        <div class="contact-eyebrow">07 — Contact</div>
+        <h2 class="h2-display">一緒に、つくろう。</h2>
+        <p class="contact-note">入会のご相談も、企業のみなさまからのお声がけも、どちらも歓迎です。</p>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:50px">
-        <div data-rv class="bb-card" style="opacity:0;transform:translateY(22px);position:relative;overflow:hidden;background:#62C4CB;border:1px solid #62C4CB;border-radius:16px;padding:36px 32px">
-          <img src="uploads/SCARE_LOGO_Opacity_BLACK.png" class="logo-invert" alt="" style="position:absolute;right:-14px;bottom:-14px;height:120px;width:auto;opacity:.16">
-          <div style="position:relative">
-            <h3 style="margin:0 0 10px;font-weight:700;font-size:21px;color:#08222a">学生の方へ</h3>
-            <p style="margin:0 0 24px;font-size:14.5px;line-height:1.85;color:#0A3940">少しでも気になったら、まずは気軽に連絡を。説明会・体験から参加できます。</p>
-            <a href="#" class="bb-btn-primary" style="display:inline-block;font-size:14.5px;font-weight:600;color:#fff;background:#08222a;text-decoration:none;padding:13px 26px;border-radius:8px">入会の相談をする</a>
+      <div class="contact-grid">
+        <div data-rv class="bb-card contact-card contact-card-primary card-pad-lg">
+          <img src="uploads/SCARE_LOGO_Opacity_BLACK.png" class="logo-invert contact-card-bg-logo" alt="">
+          <div class="contact-card-body">
+            <h3 class="contact-card-title contact-card-title--on-teal">学生の方へ</h3>
+            <p class="contact-card-desc contact-card-desc--on-teal">少しでも気になったら、まずは気軽に連絡を。説明会・体験から参加できます。</p>
+            <a href="#" class="bb-btn-primary btn btn-dark btn-md">入会の相談をする</a>
           </div>
         </div>
-        <div data-rv data-rv-delay="100" class="bb-card" style="opacity:0;transform:translateY(22px);background:#fff;border:1px solid #E6EBED;border-radius:16px;padding:36px 32px">
-          <h3 style="margin:0 0 10px;font-weight:700;font-size:21px">企業の方へ</h3>
-          <p style="margin:0 0 24px;font-size:14.5px;line-height:1.85;color:#56616A">共同開発・採用・イベント連携など、協業のご相談を承ります。</p>
-          <a href="#" class="bb-btn-ghost" style="display:inline-block;font-size:14.5px;font-weight:500;color:#10171C;background:#fff;border:1px solid #D7DEE2;text-decoration:none;padding:13px 26px;border-radius:8px">お問い合わせ</a>
+        <div data-rv data-rv-delay="100" class="bb-card card-pad-lg">
+          <h3 class="contact-card-title">企業の方へ</h3>
+          <p class="contact-card-desc contact-card-desc--muted">共同開発・採用・イベント連携など、協業のご相談を承ります。</p>
+          <a href="#" class="bb-btn-ghost btn btn-ghost btn-md">お問い合わせ</a>
         </div>
       </div>
-      <div data-rv style="opacity:0;transition:opacity .8s;display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
-        <a href="#" class="bb-soc" style="display:flex;align-items:center;gap:8px;font-size:13.5px;color:#46515A;background:#fff;border:1px solid #E2E7EA;text-decoration:none;padding:11px 18px;border-radius:9px">✕ X</a>
-        <a href="#" class="bb-soc" style="display:flex;align-items:center;gap:8px;font-size:13.5px;color:#46515A;background:#fff;border:1px solid #E2E7EA;text-decoration:none;padding:11px 18px;border-radius:9px">◎ Instagram</a>
-        <a href="#" class="bb-soc" style="display:flex;align-items:center;gap:8px;font-size:13.5px;color:#46515A;background:#fff;border:1px solid #E2E7EA;text-decoration:none;padding:11px 18px;border-radius:9px">⌥ GitHub</a>
-        <a href="#" class="bb-soc" style="display:flex;align-items:center;gap:8px;font-size:13.5px;color:#46515A;background:#fff;border:1px solid #E2E7EA;text-decoration:none;padding:11px 18px;border-radius:9px">◇ Discord</a>
+      <div data-rv class="social-row">
+        <a href="#" class="bb-soc">✕ X</a>
+        <a href="#" class="bb-soc">◎ Instagram</a>
+        <a href="#" class="bb-soc">⌥ GitHub</a>
+        <a href="#" class="bb-soc">◇ Discord</a>
       </div>
     </div>
-    <footer style="border-top:1px solid #EDF0F2;background:#fff">
-      <div style="max-width:1180px;margin:0 auto;padding:38px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;align-items:start">
+    <footer class="site-footer">
+      <div class="footer-grid">
         <div>
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
-            <img src="uploads/SCARE_LOGO_Opacity_BLACK.png" alt="B" style="height:26px;width:auto">
-            <span style="font-weight:700;font-size:16px;letter-spacing:-.02em;color:#10171C">Bashi<span style="color:#0E6B74">.com</span></span>
+          <div class="footer-brand">
+            <img src="uploads/SCARE_LOGO_Opacity_BLACK.png" alt="B" class="footer-logo-img">
+            <span class="footer-brand-name">Bashi<span class="accent">.com</span></span>
           </div>
-          <span style="font-size:12px;color:#8A949B;line-height:1.7">一橋コンピュータ研究会<br>一橋のITコミュニティ</span>
+          <span class="footer-tagline">一橋コンピュータ研究会<br>一橋のITコミュニティ</span>
         </div>
-        <div style="display:flex;flex-direction:column;gap:11px">
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#A9B2B8;text-transform:uppercase;margin-bottom:2px">Explore</span>
-          <a href="#about" style="font-size:13.5px;color:#46515A;text-decoration:none">About</a>
-          <a href="Activities.html" style="font-size:13.5px;color:#46515A;text-decoration:none">活動詳細</a>
-          <a href="Members.html" style="font-size:13.5px;color:#46515A;text-decoration:none">メンバー一覧</a>
-          <a href="#works" style="font-size:13.5px;color:#46515A;text-decoration:none">実績</a>
+        <div class="footer-col">
+          <span class="footer-col-label">Explore</span>
+          <a href="#about" class="footer-link">About</a>
+          <a href="Activities.html" class="footer-link">活動詳細</a>
+          <a href="Members.html" class="footer-link">メンバー一覧</a>
+          <a href="#works" class="footer-link">実績</a>
         </div>
-        <div style="display:flex;flex-direction:column;gap:11px">
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#A9B2B8;text-transform:uppercase;margin-bottom:2px">Connect</span>
-          <a href="#join" style="font-size:13.5px;color:#46515A;text-decoration:none">入会案内</a>
-          <a href="#partners" style="font-size:13.5px;color:#46515A;text-decoration:none">企業・協業の方へ</a>
-          <a href="#contact" style="font-size:13.5px;color:#46515A;text-decoration:none">お問い合わせ</a>
+        <div class="footer-col">
+          <span class="footer-col-label">Connect</span>
+          <a href="#join" class="footer-link">入会案内</a>
+          <a href="#partners" class="footer-link">企業・協業の方へ</a>
+          <a href="#contact" class="footer-link">お問い合わせ</a>
         </div>
       </div>
-      <div style="border-top:1px solid #EDF0F2">
-        <div style="max-width:1180px;margin:0 auto;padding:18px 24px;text-align:center">
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9AA4AB">© 2026 Bashi.com — 一橋のITコミュニティ</span>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <span class="footer-copyright">© 2026 Bashi.com — 一橋のITコミュニティ</span>
         </div>
       </div>
     </footer>
