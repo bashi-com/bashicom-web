@@ -1,5 +1,6 @@
 /* Bashi.com ランディングページの挙動
    元の BashiDirB.dc.html の DCLogic を素のDOM操作へ移植。
+   - 入会フォームリンクの差し込み（data-join-form）
    - reading progress（スクロール進捗バー）
    - ナビのアクティブ表示
    - reveal-on-scroll（data-rv）+ 下線アニメ（data-uline）
@@ -9,9 +10,25 @@
 (function () {
   'use strict';
 
+  /* ▼ 入会用 Google Form のURL。ここに貼るだけで「入会する」系のボタン
+     （HTML側で data-join-form が付いたリンク）がすべてフォームへの
+     リンクになり、新しいタブで開きます。
+     空文字のままなら、従来どおりページ内リンクとして動きます。 */
+  var JOIN_FORM_URL = '';
+
   var root = document.getElementById('bb-root');
   var progress = document.getElementById('bb-progress');
   var SECTIONS = ['about', 'activities', 'works', 'join', 'partners'];
+
+  /* ---- 入会フォームリンク ---- */
+  function initJoinLinks() {
+    if (!JOIN_FORM_URL) return;
+    document.querySelectorAll('a[data-join-form]').forEach(function (a) {
+      a.href = JOIN_FORM_URL;
+      a.target = '_blank';
+      a.rel = 'noopener';
+    });
+  }
 
   /* ---- reading progress + ナビアクティブ ---- */
   function onScroll() {
@@ -140,6 +157,7 @@
   }
 
   function init() {
+    initJoinLinks();
     initReveal();
     initCounters();
     initMenu();
